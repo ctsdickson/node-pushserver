@@ -4,6 +4,7 @@
   "description": "Cross-platform Push Notifications. A project providing a generic API to push messages using Apple's APN and Google's GCM services.",
   "keywords": [
     "push",
+    "fcm",
     "gcm",
     "apn",
     "mongodb"

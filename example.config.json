@@ -3,6 +3,10 @@
 
     "mongodbUrl": "mongodb://username:password@localhost/database",
 
+    "fcm": {
+        "apiKey": "YOUR_API_KEY_HERE"
+    },
+
     "gcm": {
         "apiKey": "YOUR_API_KEY_HERE"
     },

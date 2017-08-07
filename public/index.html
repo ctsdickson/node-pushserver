@@ -58,7 +58,31 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Android</legend>
+                    <legend>FCM</legend>
+
+                    <div class="control-group">
+                        <label class="control-label" for="fcmOptions">Payload: </label>
+
+                        <div class="controls">
+                            <textarea id="fcmOptions" name="fcmOptions" class="json-textarea source input-xlarge">
+{
+    "collapse_key": "optional",
+    "data": {
+        "your_custom_data_key": "your_custom_data_value"
+    },
+    "notification": {
+        "title": "Testing Node Title1",
+        "body": "Testing Node Body1"
+    }
+}
+                            </textarea>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>GCM</legend>
 
                     <div class="control-group">
                         <label class="control-label" for="androidOptions">Payload: </label>
@@ -183,6 +207,9 @@
 
             if(formValues.users)
                 pushNotification.users = [].concat(formValues.users);
+
+            if(isJSON(formValues.fcmOptions))
+                    pushNotification.fcm= JSON.parse(formValues.fcmOptions);
 
             if(isJSON(formValues.androidOptions))
                 pushNotification.android= JSON.parse(formValues.androidOptions);
