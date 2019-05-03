@@ -1,3 +1,12 @@
+# Mofiications 
+
+The followings are the modification from Smile-SA/node-pushserver for quick test/code example of different push message providers:
+
+1. Added Firebase FCM Push Message API (FCMPusher.js)
+2. Added Baidu Push Message API (BAIDUPusher.js)
+3. Added Getui Push Message API (GETUIPusher.js)
+4. Added Pushy Push Message API (PUSHYPusher.js) 
+
 # Push Server
 
 Push Server is a cross-plateform push server based on [node-apn](https://github.com/argon/node-apn) and [node-gcm](https://github.com/ToothlessGear/node-gcm). Push Server currently supports iOS (APN) and android (GCM) platforms. It uses mongoDB to store the push tokens. 
